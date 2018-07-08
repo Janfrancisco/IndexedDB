@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    Required meta tags
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> Bootstrap CSS
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+    <style>
+        thead {
+            width: 100%;
+        }
+
+        tbody {
+            height: 300px;
+            overflow-y: scroll;
+            width: 100%;
+        }
+
+        .t1 {
+            width: 20%;
+        }
+
+        .t2 {
+            width: 50%;
+        }
+
+        .t3 {
+            width: 30%;
+        }
+
+        thead,
+        tbody,
+        tr,
+        td,
+        th {
+            display: block;
+        }
+
+        td,
+        th {
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="nav justify-content-end colors">
+                <li class="nav-item">
+                    <a class="nav-link active" href="leitor.html">Leitor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="index.html">Cadastrar Código</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="container" style="padding-top:30px">
+        <div class="row">
+            <div class="col">
+                <h1>Decodificador Ean Code</h1>
+            </div>
+            <div class="col">
+                <form name="form1" action="#">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">EAN Code</label>
+                        <input type="number" class="form-control" id="eanCode" name="code" placeholder="Digite o código EAN">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Modelo</label>
+                        <input type="text" class="form-control" id="modelo" name="modelo" placeholder="Digite o modelo correspondente">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container" style="padding-top: 12px">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h4 class="alert alert-success text-center">Códigos cadastrados</h4>
+                <div>
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th class="t1" scope="col">#</th>
+                                <th class="t2" scope="col">Código</th>
+                                <th class="t3" scope="col">Modelo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="col"></div>
+            <div class="col-2"></div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js-DB/db.js"></script>
+    <script src="js-DB/app.js"></script>
+    <!-- 
+    <script src="js-DB/indexexDB.js"></script> -->
+    
+</body>
+
+</html>

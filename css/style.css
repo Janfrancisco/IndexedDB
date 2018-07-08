@@ -1,0 +1,44 @@
+.table-overflow {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.colors {
+    background: #4d0099;
+    padding: 10px 0;
+
+}
+form label{
+   color: #4d0099;
+
+}
+.codigo{
+    background: gray;
+    font-size: 62px;
+    text-align: center;
+}
+.space{
+    padding: 20px;
+}
+form input[type=text], form input[type=number]{
+    width: 80%;
+    color: #4d0099;
+}
+.colors li a {
+    color: white;
+}
+
+.colors li a: hover {}
+
+.nav-item a:hover {
+    color: #bf80ff;
+}
+
+.nav-link.disabled {
+    color: #9985ad;
+}
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #ffebcc;
+}
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Scaneie seu código!</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul class="nav justify-content-end colors">
+                <li class="nav-item">
+                    <a class="nav-link active disabled" href="leitor.html">Leitor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="cadastrar.html">Cadastrar Código</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="row space">
+            <div class="col ">
+                <form>
+                     <label for="exampleFormControlInput1">Ean Code</label>
+                     <input type="number" class="form-control" id="inp_codigo" placeholder="Scaneie aqui">
+                </form>
+            </div>
+            <div class="col">
+                <h4>Código:</h4>
+                <div class="codigo" id="result">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js-DB/bootstrap.min.js"></script>
+    <script src="js-DB/db.js"></script>
+    <script src="js-DB/reader.js"></script>
+    <!-- <script src="js-DB/leitor.js"></script> -->
+</body>
+</html>
